@@ -24,7 +24,7 @@ function App() {
     const [newMovieTitle, setNewMovieTitle] = useState<string>("");
     const [newReleaseDate, setNewReleaseDate] = useState<number>(0);
     const [isNewMovieOscar, setIsNewMovieOscar] = useState<boolean>(false);
-    const [fileUpload, setFileUpload] = useState<File>(null);
+    const [fileUpload, setFileUpload] = useState<File>();
     const [updatedTitle, setUpdatedTitle] = useState<string>("");
 
     const moviesCollectionRef = collection(db, "movies");
